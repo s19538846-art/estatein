@@ -5,13 +5,14 @@ import { Button } from "@/components/ui/button";
 // import HeroSection from "@/components/HeroSection";
 import Header from "@/components/Header";
 import InfoBlock from "@/components/InfoBlock";
+import Services from "@/components/Services";
 
 export default function Home() {
     return (
         <>
-            <Header />
             <main className="">
                 <section className="max-w-7xl m-auto">
+                    <Header />
                     <InfoBlock
                         title="Discover Your Dream"
                         subtitle="Property with Estafetind"
@@ -23,8 +24,13 @@ export default function Home() {
                             { value: "10k+", label: "Properties For Clients" },
                             { value: "16+", label: "Years of Experience" },
                         ]}
+                        image={{
+                            src: "/hero.webp",
+                            alt: "Beautiful property",
+                            // position: "right",
+                        }}
                         variant="hero"
-                        layout="left"
+                        // layout="left"
                     />
                     <InfoBlock
                         title="Our Journey"
@@ -34,10 +40,18 @@ export default function Home() {
                             { value: "10k+", label: "Properties For Clients" },
                             { value: "16+", label: "Years of Experience" },
                         ]}
+                        image={{
+                            src: "/heroImage-2.webp",
+                            alt: "Beautiful property",
+                            // position: "right",
+                        }}
                         variant="story"
-                        layout="left"
+                        // layout="left"
                     />
                 </section>
+                <div>
+                    <Services/>
+                </div>
             </main>
         </>
     );
