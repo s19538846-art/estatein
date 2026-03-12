@@ -1,5 +1,5 @@
-import Header from "./components/Header";
-import PropertyCard from "./components/PropertyCard";
+import Header from "../components/Header";
+import PropertyCard from "../components/PropertyCard";
 
 const featuredProperties = [
   {
