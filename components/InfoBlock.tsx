@@ -3,10 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
 
-interface StatItem {
-    value: string;
-    label: string;
-}
+// interface StatItem {
+//     value: string;
+//     label: string;
+// }
 
 interface ImageProps {
     src: string;
@@ -21,7 +21,7 @@ interface InfoBlockProps {
     primaryButtonLink?: string;
     secondaryButtonText?: string;
     secondaryButtonLink?: string;
-    stats: StatItem[];
+    // stats: StatItem[];
     image?: ImageProps;
     backgroundImage?: string;
     variant?: "hero" | "story";
@@ -37,7 +37,7 @@ const InfoBlock: React.FC<InfoBlockProps> = ({
     primaryButtonLink = "/",
     secondaryButtonText,
     secondaryButtonLink = "/",
-    stats,
+    // stats,
     image,
     backgroundImage,
     variant = "hero",
@@ -68,9 +68,7 @@ const InfoBlock: React.FC<InfoBlockProps> = ({
                     <p className="text-[#999]">{description}</p>
                 </div>
                 {(primaryButtonText || secondaryButtonText) && (
-                    <div
-                        className="flex flex-col md:flex-row gap-5" 
-                    >
+                    <div className="flex flex-col md:flex-row gap-5">
                         {primaryButtonText && (
                             <Link className="" href={primaryButtonLink}>
                                 <Button className="bg-[#141414] border border-[#262626] rounded-[10px] px-5 md:px-6 py-3.5 md:py-4.5 w-full">
