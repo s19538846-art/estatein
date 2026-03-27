@@ -143,3 +143,46 @@ const InfoBlock: React.FC<InfoBlockProps> = ({
 };
 
 export default InfoBlock;
+
+//exaple of usage//
+{/* <InfoBlock
+    title="Discover Your Dream"
+    subtitle="Property with Estafetind"
+    description="Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams."
+    primaryButtonText="Learn More"
+    secondaryButtonText="Browse Properties"
+    // stats={[
+    //     { value: "200+", label: "Happy Customers" },
+    //     {
+    //         value: "10k+",
+    //         label: "Properties For Clients",
+    //     },
+    //     { value: "16+", label: "Years of Experience" },
+    // ]}
+    image={{
+        src: "/hero.webp",
+        alt: "Beautiful property",
+        // position: "right",
+    }}
+    variant="hero"
+    // layout="left"
+/>; */}
+
+{
+    /* <InfoBlock
+    title="Our Journey"
+    description="Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary. Over the years, we've expanded our reach, forged valuable partnerships, and gained the trust of countless clients."
+    stats={[
+        { value: "200+", label: "Happy Customers" },
+        { value: "10k+", label: "Properties For Clients" },
+        { value: "16+", label: "Years of Experience" },
+    ]}
+    image={{
+        src: "/heroImage-2.webp",
+        alt: "Beautiful property",
+        // position: "right",
+    }}
+    variant="story"
+    // layout="left"
+/>; */
+}

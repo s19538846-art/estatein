@@ -13,13 +13,13 @@ export default function Navbar() {
     return (
         <div className="hidden md:block">
             <NavigationMenu>
-                <NavigationMenuList>
-                    <NavigationMenuItem className="text-[#FFF] flex items-center gap-3">
+                <NavigationMenuList className="">
+                    <NavigationMenuItem className="text-[#FFF] flex items-center gap-7">
                         <NavigationMenuLink
                             asChild
                             className={navigationMenuTriggerStyle()}
                         >
-                            <Link className="" href="/docs">
+                            <Link className="" href="/">
                                 Home
                             </Link>
                         </NavigationMenuLink>
@@ -27,7 +27,7 @@ export default function Navbar() {
                             asChild
                             className={navigationMenuTriggerStyle()}
                         >
-                            <Link className="" href="/docs">
+                            <Link className="" href="/about">
                                 About Us
                             </Link>
                         </NavigationMenuLink>
@@ -35,7 +35,7 @@ export default function Navbar() {
                             asChild
                             className={navigationMenuTriggerStyle()}
                         >
-                            <Link className="" href="/docs">
+                            <Link className="" href="/properties">
                                 Properties
                             </Link>
                         </NavigationMenuLink>
@@ -43,7 +43,7 @@ export default function Navbar() {
                             asChild
                             className={navigationMenuTriggerStyle()}
                         >
-                            <Link className=" " href="/docs">
+                            <Link className=" " href="/services">
                                 Services
                             </Link>
                         </NavigationMenuLink>
