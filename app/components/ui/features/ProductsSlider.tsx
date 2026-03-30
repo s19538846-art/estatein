@@ -1,10 +1,9 @@
 "use client";
-import SwiperJS from "@/components/SwiperJS";
 import { Bath, Bed, Building2 } from "lucide-react";
 import Image from "next/image";
-import React from "react";
 import { Button } from "../button";
 import Link from "next/link";
+import SwiperJS from "../../SwiperJS";
 
 export default function ProductsSlider() {
     const slides = [

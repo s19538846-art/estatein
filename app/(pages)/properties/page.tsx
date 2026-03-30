@@ -1,17 +1,8 @@
-import BannerWithImageSvgs from "@/components/Banner";
-import FormFieldWrapper from "@/components/FormFieldWrapper";
-import SearchInput, { InputInline } from "@/components/Input";
-import { SelectDemo } from "@/components/SelectDemo";
-import ProductsSlider from "@/components/ui/features/ProductsSlider";
-import {
-    Select,
-    SelectContent,
-    SelectGroup,
-    SelectItem,
-    SelectTrigger,
-    SelectValue,
-} from "@/components/ui/select";
-import SliderWrapper from "@/components/ui/SliderWrapper";
+import BannerWithImageSvgs from "@/app/components/Banner";
+import SearchInput from "@/app/components/Input";
+import { SelectDemo } from "@/app/components/SelectDemo";
+import ProductsSlider from "@/app/components/ui/features/ProductsSlider";
+import SliderWrapper from "@/app/components/ui/SliderWrapper";
 import { MapPin } from "lucide-react";
 import { Form } from "radix-ui";
 import React from "react";
@@ -36,7 +27,7 @@ export default function PropertiesPage() {
                 <ProductsSlider />
             </SliderWrapper>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 bg-black rounded-3xl m-auto max-w-7xl">
-               <SelectDemo/>
+               <SelectDemo />
             </div>
         </div>
     );

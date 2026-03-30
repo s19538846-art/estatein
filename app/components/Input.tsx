@@ -1,9 +1,8 @@
 "use client";
-import { Button } from "@/components/ui/button";
-import { Field } from "@/components/ui/field";
-import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
 import React, { use, useState } from "react";
+import { Input } from "./ui/input";
+import { Button } from "./ui/button";
 interface SearchInputProps {
     placeholder?: string;
     buttonText?: string;
