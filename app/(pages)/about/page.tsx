@@ -9,6 +9,7 @@ import Footer from '@/app/components/Footer';
 export default function AboutUs() {
   return (
     <div>
+<<<<<<< HEAD
 
       <main className="min-h-screen bg-[#141414]">
       
@@ -22,6 +23,9 @@ export default function AboutUs() {
       </main>
 
 
+=======
+      
+>>>>>>> 967868f3c4c1ceba73d919ab612b0f793babfa7b
     </div>
   );
 }
