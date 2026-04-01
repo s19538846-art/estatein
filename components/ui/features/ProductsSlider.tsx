@@ -5,9 +5,9 @@ import Image from "next/image";
 import React from "react";
 import { Button } from "../button";
 import Link from "next/link";
+import { PropertyCard } from "@/app/types/card.types";
 
-export default function ProductsSlider() {
-    const slides = [
+const slides: PropertyCard[] = [
         {
             id: 1,
             title: "Seaside Serenity Villa",
@@ -18,6 +18,9 @@ export default function ProductsSlider() {
             bathrooms: 3,
             propertyType: "Villa",
             price: 500000,
+            location: "bishkek",
+            size: 250,
+            buildYear: 2022,
         },
         {
             id: 2,
@@ -40,6 +43,9 @@ export default function ProductsSlider() {
             bathrooms: 3,
             propertyType: "Villa",
             price: 500000,
+            location: "almaty",
+            size: 85,
+            buildYear: 2020,
         },
         {
             id: 4,
@@ -51,8 +57,20 @@ export default function ProductsSlider() {
             bathrooms: 3,
             propertyType: "Villa",
             price: 500000,
+            location: "osh",
+            size: 100,
+            buildYear: 2021,
         },
     ];
+
+interface ProductsSliderProps {
+  data: PropertyCard[]; // Принимаем массив данных как пропс
+}
+
+export default function ProductsSlider({ data }: ProductsSliderProps) {
+//     if (data.length === 0) {
+//     return <div className="text-white py-10">Ничего не найдено по вашим параметрам</div>;
+//   }
     return (
         <div className="text-white text-center pt-10 max-w-7xl m-auto">
             <SwiperJS

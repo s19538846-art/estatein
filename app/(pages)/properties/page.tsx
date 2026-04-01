@@ -1,6 +1,7 @@
 import BannerWithImageSvgs from "@/components/Banner";
 import FormFieldWrapper from "@/components/FormFieldWrapper";
 import SearchInput, { InputInline } from "@/components/Input";
+import {SearchProduct} from "@/components/SearchProduct";
 import { SelectDemo } from "@/components/SelectDemo";
 import ProductsSlider from "@/components/ui/features/ProductsSlider";
 import {
@@ -12,7 +13,7 @@ import {
     SelectValue,
 } from "@/components/ui/select";
 import SliderWrapper from "@/components/ui/SliderWrapper";
-import { MapPin } from "lucide-react";
+import { MapPin, Search } from "lucide-react";
 import { Form } from "radix-ui";
 import React from "react";
 
@@ -33,11 +34,12 @@ export default function PropertiesPage() {
                 title="Discover a World of Possibilities"
                 description="Our portfolio of properties is as diverse as your dreams. Explore the following categories to find the perfect property that resonates with your vision of home"
             >
-                <ProductsSlider />
+                <SearchProduct />
             </SliderWrapper>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 bg-black rounded-3xl m-auto max-w-7xl">
+            <div className="p-4 m-auto max-w-7xl">
                <SelectDemo/>
             </div>
+            <SearchProduct />
         </div>
     );
 }

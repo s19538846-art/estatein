@@ -1,4 +1,5 @@
 "use client";
+import { FilterState, PropertyCard } from "@/app/types/card.types";
 import { Button } from "@/components/ui/button";
 import { Field } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
@@ -9,6 +10,10 @@ interface SearchInputProps {
     buttonText?: string;
     onSearch?: (value: string) => void;
 }
+
+
+
+
 
 const SearchInput: React.FC<SearchInputProps> = ({
     placeholder = "Search For A Property",

@@ -50,10 +50,10 @@ export default function Home() {
             <div>{/* <Services /> */}</div>
             <section className="text-white text-center pt-10 max-w-7xl m-auto pb-40">
                 {/* <ProductsSlider /> */}
-                <SliderWrapper title="Featured Properties" description="Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click View Details for more information.">
+                <SliderWrapper title="Featured Properties" description="Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click View Details for more information." primaryButtonText="View All Properties">
                     <ProductsSlider />
                 </SliderWrapper>
-                <SliderWrapper>
+                <SliderWrapper title="What Our Clients Say" description="Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs." primaryButtonText="View All Testimonials">
                     <RatesSlider />
                 </SliderWrapper>
                 <BannerWithImageSvgs

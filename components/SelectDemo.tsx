@@ -77,27 +77,15 @@ export const bookingFields = [
         ],
     },
     {
-        id: "rooms",
-        label: "Bedrooms",
-        placeholder: "Number of rooms",
-        icon: "/bed.svg",
+        id: "build-year",
+        label: "Build Year",
+        placeholder: "Select Year",
+        icon: "/date.svg",
         options: [
-            { label: "1 Bedroom", value: "1" },
-            { label: "2 Bedrooms", value: "2" },
-            { label: "3 Bedrooms", value: "3" },
-            { label: "4+ Bedrooms", value: "4plus" },
-        ],
-    },
-    {
-        id: "amenities",
-        label: "Amenities",
-        placeholder: "Select Amenities",
-        icon: "/pool.svg",
-        options: [
-            { label: "Swimming Pool", value: "pool" },
-            { label: "Gym", value: "gym" },
-            { label: "Parking", value: "parking" },
-            { label: "Garden", value: "garden" },
+            { label: "Before 2000", value: "before-2000" },
+            { label: "2000 - 2010", value: "2000-2010" },
+            { label: "2011 - 2020", value: "2011-2020" },
+            { label: "After 2020", value: "after-2020" },
         ],
     },
 ];
@@ -112,13 +100,13 @@ export function SelectDemo({
     className,
 }: SelectDemoProps) {
     return (
-        <div className={cn("flex flex-wrap gap-4", className)}>
+        <div className={cn("flex  gap-5", className)}>
             {bookingFields.map((field) => (
                 <Select
                     key={field.id}
                     onValueChange={(val) => onValueChange?.(field.id, val)}
                 >
-                    <SelectTrigger className="w-full max-w-[240px] h-[72px] bg-[#121212] border-white/5 rounded-2xl px-4 focus:ring-0">
+                    <SelectTrigger className="w-full max-w-[240px] h-[72px] bg-[#141414] border-white/5 rounded-[12px] p-5 focus:ring-0">
                         <div className="flex items-center gap-3">
                             {/* Рендерим иконку как компонент */}
                             <Image
@@ -138,8 +126,8 @@ export function SelectDemo({
                         </div>
                     </SelectTrigger>
 
-                    <SelectContent className="bg-[#121212] border-white/10 text-white">
-                        <SelectGroup>
+                    <SelectContent className="bg-[#121212] border-white/10 text-white flex ">
+                        <SelectGroup className="">
                             <SelectLabel className="text-white/40">
                                 {field.label} Options
                             </SelectLabel>
