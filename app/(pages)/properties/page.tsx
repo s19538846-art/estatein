@@ -1,8 +1,11 @@
 import BannerWithImageSvgs from "@/components/Banner";
 import FormFieldWrapper from "@/components/FormFieldWrapper";
-import SearchInput, { InputInline } from "@/components/Input";
-import {SearchProduct} from "@/components/SearchProduct";
-import { SelectDemo } from "@/components/SelectDemo";
+import PropertyContactForm, { FormRhfInput } from "@/components/FormPage";
+import SearchInput, { InputInline } from "@/components/SearchInput";
+import InputGrid from "@/components/InputGrid";
+import { SearchProduct } from "@/components/SearchProduct";
+import FormSelect from "@/components/Select";
+import SelectDemo from "@/components/SelectField";
 import ProductsSlider from "@/components/ui/features/ProductsSlider";
 import {
     Select,
@@ -37,9 +40,16 @@ export default function PropertiesPage() {
                 <SearchProduct />
             </SliderWrapper>
             <div className="p-4 m-auto max-w-7xl">
-               <SelectDemo/>
+                <SelectDemo />
             </div>
-            <SearchProduct />
+            <div className="py-20 m-auto max-w-7xl">
+                {" "}
+                <InputGrid />
+            </div>
+
+            {/* <FormSelect /> */}
+
+            <FormRhfInput />
         </div>
     );
 }

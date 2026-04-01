@@ -12,9 +12,6 @@ interface SearchInputProps {
 }
 
 
-
-
-
 const SearchInput: React.FC<SearchInputProps> = ({
     placeholder = "Search For A Property",
     buttonText = "Find Property",

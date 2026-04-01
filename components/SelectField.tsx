@@ -93,11 +93,13 @@ interface SelectDemoProps {
     fields: BookingField[];
     onValueChange?: (id: string, value: string) => void;
     className?: string;
+    icon?: string;
 }
-export function SelectDemo({
+export default function SelectField({
     fields,
     onValueChange,
     className,
+    icon,
 }: SelectDemoProps) {
     return (
         <div className={cn("flex  gap-5", className)}>
@@ -108,15 +110,15 @@ export function SelectDemo({
                 >
                     <SelectTrigger className="w-full max-w-[240px] h-[72px] bg-[#141414] border-white/5 rounded-[12px] p-5 focus:ring-0">
                         <div className="flex items-center gap-3">
-                            {/* Рендерим иконку как компонент */}
-                            <Image
-                                src={field.icon}
-                                alt={field.label}
-                                width={20}
-                                height={20}
-                                className="w-5 h-5 text-white"
-                                
-                            />
+                            {field.icon && (
+                                <Image
+                                    src={field.icon}
+                                    alt={field.label}
+                                    width={20}
+                                    height={20}
+                                    className="w-5 h-5 text-white"
+                                />
+                            )}
                             <div className="flex flex-col items-start">
                                 {/* <span className="text-[10px] uppercase text-white/40 font-bold tracking-wider">
                                     {field.label}
