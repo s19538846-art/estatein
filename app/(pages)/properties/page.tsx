@@ -1,11 +1,11 @@
 import BannerWithImageSvgs from "@/components/Banner";
 import FormFieldWrapper from "@/components/FormFieldWrapper";
-import PropertyContactForm, { FormRhfInput } from "@/components/FormPage";
-import SearchInput, { InputInline } from "@/components/SearchInput";
+import PropertyContactForm, { FormRhfInput } from "@/app/components/FormPage";
+import SearchInput, { InputInline } from "@/app/components/SearchInput";
 import InputGrid from "@/components/InputGrid";
 import { SearchProduct } from "@/components/SearchProduct";
 import FormSelect from "@/components/Select";
-import SelectDemo from "@/components/SelectField";
+import SelectDemo from "@/app/components/SelectField";
 import ProductsSlider from "@/components/ui/features/ProductsSlider";
 import {
     Select,

@@ -1,6 +1,6 @@
 import { Field, FieldGroup, FieldLabel } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
-import SelectDemo from "./SelectField";
+import SelectDemo from "../app/components/SelectField";
 import {
     Select,
     SelectContent,

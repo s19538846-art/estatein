@@ -1,12 +1,12 @@
 "use client";
 import { useMemo, useState } from "react";
-import { bookingFields } from "./SelectField";
+import { bookingFields } from "../app/components/SelectField";
 import { FilterState, PropertyCard } from "@/app/types/card.types";
 
 // SearchProduct.tsx
 
 import ProductsSlider from "./ui/features/ProductsSlider"; // Сам компонент
-import { usePropertyFilter } from "@/components/hooks/usePropertyFilter"; // Хук для фильтрации
+import { usePropertyFilter } from "@/app/components/hooks/usePropertyFilter"; // Хук для фильтрации
 import { slides } from "@/app/types/card.types";
 
 export const SearchProduct = () => {

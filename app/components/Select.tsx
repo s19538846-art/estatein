@@ -1,4 +1,4 @@
-import SelectDemo from "./SelectField";
+import SelectDemo from "../app/components/SelectField";
 import { Field, FieldLabel } from "./ui/field";
 import {
     Select,
