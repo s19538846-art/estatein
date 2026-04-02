@@ -1,5 +1,5 @@
 "use client";
-import SwiperJS from "@/components/SwiperJS";
+import SwiperJS from "@/app/components/SwiperJS";
 import { Bath, Bed, Building2 } from "lucide-react";
 import Image from "next/image";
 import React from "react";

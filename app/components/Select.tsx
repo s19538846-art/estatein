@@ -1,12 +1,13 @@
-import SelectDemo from "../app/components/SelectField";
-import { Field, FieldLabel } from "./ui/field";
+//has't used yet//
+import SelectDemo from "@/app/components/SelectField";
+import { Field, FieldLabel } from "@/app/components/ui/field";
 import {
     Select,
     SelectContent,
     SelectItem,
     SelectTrigger,
     SelectValue,
-} from "./ui/select";
+} from "@/app/components/ui/select";
 
 interface SelectOption {
     label: string;
@@ -20,6 +21,7 @@ interface FormSelectProps {
     onChange: (value: string) => void;
     value?: string;
     error?: string;
+    data: []
 }
 export const bookingFields = [
     {

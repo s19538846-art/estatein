@@ -7,7 +7,7 @@ import {
     SelectLabel,
     SelectTrigger,
     SelectValue,
-} from "@/components/ui/select";
+} from "@/app/components/ui/select";
 import { cn } from "@/lib/utils";
 import { Calendar, Car } from "lucide-react";
 import Image from "next/image";

@@ -1,8 +1,8 @@
 "use client";
 import { FilterState, PropertyCard } from "@/app/types/card.types";
-import { Button } from "@/components/ui/button";
-import { Field } from "@/components/ui/field";
-import { Input } from "@/components/ui/input";
+import { Button } from "@/app/components/ui/button";
+import { Field } from "@/app/components/ui/field";
+import { Input } from "@/app/components/ui/input";
 import { Search } from "lucide-react";
 import React, { use, useState } from "react";
 interface SearchInputProps {
