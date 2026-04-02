@@ -32,7 +32,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#141414] text-white pt-20">
       <div className="max-w-[1440px] mx-auto px-6 md:px-16">
-        
+        {/* Использовал Framer Motion для анимаций */}
         {/* Секция CTA */}
         <div className="relative border-y border-[#262626] py-16 flex flex-col md:flex-row items-center justify-between gap-8 overflow-hidden">
           <div className="absolute inset-0 opacity-10 pointer-events-none bg-[url('/image/abstract-design.png')] bg-cover bg-center" />
@@ -61,7 +61,7 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-2 group">
               <div className="bg-[#703BF7] p-2 rounded-lg transition-transform group-hover:rotate-12">
                 <Image 
-                  src="/image/logo.svg" 
+                  src="/image/icons/logo.svg" 
                   alt="logo" 
                   width={24} 
                   height={24} 
